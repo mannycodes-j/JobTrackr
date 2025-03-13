@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @plugin "tailwindcss-animate";
 
@@ -122,12 +122,13 @@
   }
 }
 #header {
-  background:
-
-    radial-gradient(circle, rgba(50, 200, 120, 0.2) 1px, transparent 1px), 
-   
-     radial-gradient(
-       27.03% 47.61% at 9% 57.5%,
+  background: radial-gradient(
+      circle,
+      rgba(50, 200, 120, 0.2) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      27.03% 47.61% at 9% 57.5%,
       rgba(255, 230, 215, 0.3) 0%,
       rgba(255, 222, 201, 0) 100%
     ),
@@ -137,7 +138,7 @@
       rgba(0, 71, 225, 0.021) 100%
     ),
     linear-gradient(0deg, #f8f8fa 0%, #ffffff 77.56%);
-  background-size: 15px 15px, 100% 100%, 100% 100%, 100% 100%; 
+  background-size: 15px 15px, 100% 100%, 100% 100%, 100% 100%;
 }
 
 .bgColor {
@@ -145,13 +146,23 @@
   /* Light green to very light green-cyan */
 }
 *::-webkit-scrollbar {
-  background-color: transparent;
-  width: 6px;
+  width: 8px;
 }
+
 *::-webkit-scrollbar-thumb {
   background-color: #2563eb;
-  border-radius: 20px;
+  border-radius: 10px;
 }
-*{
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+* {
   scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+  * {
+    scrollbar-color: #2563eb transparent;
+    scrollbar-width: 8px;
+  }
 }
