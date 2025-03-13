@@ -1,0 +1,71 @@
+.cardHover {
+  transition: all 0.3s ease;
+}
+
+.cardHover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dark .cardHover:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.slideInRight {
+  animation: slideInRight 0.3s ease-out;
+}
+
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+.buttonHover {
+  transition: all 0.2s ease;
+}
+
+.buttonHover:hover {
+  transform: translateY(-1px);
+}
+
+.iconHover {
+  transition: all 0.2s ease;
+}
+
+.iconHover:hover {
+  transform: rotate(15deg);
+}
+
+.navItemHover {
+  transition: background-color 0.2s ease;
+}
+
+.navItemHover:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark .navItemHover:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.heroOutlineButton:hover {
+  background: black; 
+  color: #16a34a;/* gray-100 */
+   transform: translateY(-2px);
+}
+
+.deleteButtonHover:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: rgb(239, 68, 68);
+}
+
+.dark .deleteButtonHover:hover {
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
