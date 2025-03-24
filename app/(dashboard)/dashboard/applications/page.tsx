@@ -85,6 +85,9 @@ export default function ApplicationsPage() {
   const handleDeleteApplication = (application: JobApplication) => {
     setApplications(applications.filter((app) => app.id !== application.id))
   }
+  const handleEditApplication = (application: JobApplication) =>{
+    setApplications(applications)
+  }
 const { user } = useAuth()
 const router = useRouter()
 
@@ -254,6 +257,7 @@ if (!user) {
                 key={application.id}
                 application={application}
                 onDelete={handleDeleteApplication}
+                onEdit={handleEditApplication}
               />
             ))
           ) : (

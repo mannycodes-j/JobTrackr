@@ -76,7 +76,11 @@ export function DashboardHeader({ user }: DashboardHeaderProps) {
             >
               <Avatar className="h-8 w-8">
                 <AvatarImage src={user.avatar} alt={user.name} />
-                <AvatarFallback>{user.name.charAt(0)}</AvatarFallback>
+                <AvatarFallback
+                  className={`flex h-8 w-8 items-center justify-center rounded-full bg-blue-500 text-xs text-white ${styles.pulseAnimation}`}
+                >
+                  {user.name[0].toUpperCase()}
+                </AvatarFallback>
               </Avatar>
             </Button>
           </DropdownMenuTrigger>

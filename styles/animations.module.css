@@ -18,7 +18,9 @@
 .slideInRight {
   animation: slideInRight 0.3s ease-out;
 }
-
+.pulseAnimation {
+  animation: pulse 2s infinite;
+}
 .pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
